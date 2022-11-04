@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alexsandro - Sitem em construção</title>
+	<link rel="stylesheet" type="text/css" href="Css/Css.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+   	<link rel="icon" type="image/x-icon" href="Img/LogoSite/FaviconNVK.ico">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
+	</style>
+</head> 
+
+<body>
+	<header>
+		<div class="TopoSite">
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<div class="side-bar">
+				<div class="close-btn">
+					<i class="fas fa-times"></i>
+				</div>
+
+				<div class="menu">
+					<div class="item"><a href="#">Iniciar</a></div>
+					<div class="item">
+						<a class="sub-btn" >Menu 2<i class="fas fa-angle-right dropdown"></i></i></a>
+						<div class="sub-menu">
+							<a href="" class="sub-item">Sub Menu 2.1</a>
+							<a href="" class="sub-item">Sub Menu 2.2</a>
+							<a href="" class="sub-item">Sub Menu 2.3</a>
+						</div>
+					</div>
+					<div class="item"><a href="#">Menu 3</a></div>
+					<div class="item"><a href="#">Menu 4</a></div>
+					<div class="item">
+						<a class="sub-btn" >Menu 5<i class="fas fa-angle-right dropdown"></i></a>
+						<div class="sub-menu">
+							<a href="" class="sub-item">Sub Menu 5.1</a>
+							<a href="" class="sub-item">Sub Menu 5.2</a>
+							<a href="" class="sub-item">Sub Menu 5.3</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Logo">
+				<img src="Img/LogoSite/LogoNVKNavisko.png" alt="Fechar">
+			</div>
+			<div class="seach-bnt">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){				
+				// Jquery abrir e fechar menu do lado
+				$('.menu-btn').click(function(){
+					$('.side-bar').addClass('active');
+					$('.menu-btn').css("visibility","hidden");
+				});
+				$('.close-btn').click(function(){
+					$('.side-bar').removeClass('active');
+					$('.menu-btn').css("visibility","visible");
+				});
+
+				// Jquery para fazer o toggle nos sub-menus
+				$('.sub-btn').click(function(){
+					$(this).next('.sub-menu').slideToggle();
+					$(this).find('.dropdown').toggleClass('rotate');
+				});
+			});
+		</script>
+	</header>
+	
+	<div class="DivPropaganda"></div>
+
+	<section>
+		<div class="BoxNewPostSection">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostSection">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostSection">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamcorper velit accumsan placerat in fringilla leo praesent, semper dapibus accumsan ornare nec mi nam aenean cubilia. elit luctus porttitor amet urna faucibus aenean, nostra et massa faucibus rhoncus. justo vestibulum proin lacus aliquam ante pellentesque ornare aptent potenti at habitasse libero non, netus congue himenaeos bibendum ultricies mi justo euismod nibh nostra litora. nisl fames sapien purus risus purus tempus purus, etiam orci donec neque aenean luctus, tempor eleifend nibh eros ut iaculis.<a href="#">Continuar lendo...</a></p>
+			</div>
+			<div class="HostBoxNewPostSection">
+				<img src="Img/Host.png" alt="Host"><p>Alexsandro</p>
+			</div>
+			<div class="DataBoxNewPostSection">
+				<img src="Img/Data.png" alt="Data"><p>18/08/2022 | 22:27</p>
+			</div>
+		</div>
+		<div class="BoxNewPostSection">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostSection">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostSection">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamcorper velit accumsan placerat in fringilla leo praesent, semper dapibus accumsan ornare nec mi nam aenean cubilia. elit luctus porttitor amet urna faucibus aenean, nostra et massa faucibus rhoncus. justo vestibulum proin lacus aliquam ante pellentesque ornare aptent potenti at habitasse libero non, netus congue himenaeos bibendum ultricies mi justo euismod nibh nostra litora. nisl fames sapien purus risus purus tempus purus, etiam orci donec neque aenean luctus, tempor eleifend nibh eros ut iaculis. <a href="#">Continuar lendo...</a></p>
+			</div>
+			<div class="HostBoxNewPostSection">
+				<img src="Img/Host.png" alt="Host"><p>Alexsandro</p>
+			</div>
+			<div class="DataBoxNewPostSection">
+				<img src="Img/Data.png" alt="Data"><p>18/08/2022 | 22:27</p>
+			</div>
+		</div>
+		<div class="BoxNewPostSection">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostSection">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostSection">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamcorper velit accumsan placerat in fringilla leo praesent, semper dapibus accumsan ornare nec mi nam aenean cubilia. elit luctus porttitor amet urna faucibus aenean, nostra et massa faucibus rhoncus. justo vestibulum proin lacus aliquam ante pellentesque ornare aptent potenti at habitasse libero non, netus congue himenaeos bibendum ultricies mi justo euismod nibh nostra litora. nisl fames sapien purus risus purus tempus purus, etiam orci donec neque aenean luctus, tempor eleifend nibh eros ut iaculis. <a href="#">Continuar lendo...</a></p>
+			</div>
+			<div class="HostBoxNewPostSection">
+				<img src="Img/Host.png" alt="Host"><p>Alexsandro</p>
+			</div>
+			<div class="DataBoxNewPostSection">
+				<img src="Img/Data.png" alt="Data"><p>18/08/2022 | 22:27</p>
+			</div>
+		</div>
+		<div class="BoxNewPostSection">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostSection">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostSection">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamcorper velit accumsan placerat in fringilla leo praesent, semper dapibus accumsan ornare nec mi nam aenean cubilia. elit luctus porttitor amet urna faucibus aenean, nostra et massa faucibus rhoncus. justo vestibulum proin lacus aliquam ante pellentesque ornare aptent potenti at habitasse libero non, netus congue himenaeos bibendum ultricies mi justo euismod nibh nostra litora. nisl fames sapien purus risus purus tempus purus, etiam orci donec neque aenean luctus, tempor eleifend nibh eros ut iaculis. <a href="#">Continuar lendo...</a></p>
+			</div>
+			<div class="HostBoxNewPostSection">
+				<img src="Img/Host.png" alt="Host"><p>Alexsandro</p>
+			</div>
+			<div class="DataBoxNewPostSection">
+				<img src="Img/Data.png" alt="Data"><p>18/08/2022 | 22:27</p>
+			</div>
+		</div>
+		<div class="BoxNewPostSection">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostSection">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostSection">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamcorper velit accumsan placerat in fringilla leo praesent, semper dapibus accumsan ornare nec mi nam aenean cubilia. elit luctus porttitor amet urna faucibus aenean, nostra et massa faucibus rhoncus. justo vestibulum proin lacus aliquam ante pellentesque ornare aptent potenti at habitasse libero non, netus congue himenaeos bibendum ultricies mi justo euismod nibh nostra litora. nisl fames sapien purus risus purus tempus purus, etiam orci donec neque aenean luctus, tempor eleifend nibh eros ut iaculis. <a href="#">Continuar lendo...</a></p>
+			</div>
+			<div class="HostBoxNewPostSection">
+				<img src="Img/Host.png" alt="Host"><p>Alexsandro</p>
+			</div>
+			<div class="DataBoxNewPostSection">
+				<img src="Img/Data.png" alt="Data"><p>18/08/2022 | 22:27</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		$(".RessBoxNewPostSection p").text(function(index, currentText) {
+		    if(currentText.length > 350)
+		        return currentText.substr(0, 350) + ' ... Ler mais!';
+		    return currentText;
+		});
+	</script> 
+	
+	<aside>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+		<div class="BoxNewPostAside">
+			<img src="Img/ImagensBio/DKNovel.jpg" alt="The Dark King Novel">
+			<div class="TitleBoxNewPostAside">
+				<p>The Dark King</p>
+			</div>
+			<div class="RessBoxNewPostAside">
+				<p>Lorem ipsum nostra donec quam suspendisse molestie aenean volutpat ut lobortis, suspendisse ornare ullamco </p>
+			</div>
+		</div>
+	</aside>
+	<footer>
+		<p>Patrocinadordsadsadsadsa 1</p>
+		<p>Patrocinador 2</p>
+		<p>Patrocindwqdwqdwqdqdqdqweqeqewqeadorwqewqeqewqewqeqeqw 3</p>
+		<p>Patrocinador dsadsadsad4</p>
+		<p>Patrocinador 5</p>
+		<p>Patrocinadodsadsadsar 6</p>
+		<p>Patrodsadasdsadadqwqdwqdwqcinador 7</p>
+		<p>Patrocinador 8</p>
+		<p>Patrocinadsaddador 9</p>
+		<p>Patrocinador 10</p>
+		<p>Patrocinadodsadsar 11</p>
+		<p>Patrocinador 12</p>
+		<p>Patrocidsadsadsadsnadorewqeqewqewqewqeqweqe 13</p>
+		<p>Patrocinador 14</p>
+		<p>Patrocinadqdwqdwqdor 15</p>
+
+		<div class="UltimaLinha">
+			<p class="FooterP1">Navisko - 2022</p>
+			<p class="FooterP2">Site feito por - Alexsandro | E-mail contato - Alexsandro.ACS98@gmail.com</p>
+		</div>
+	</footer>
+</body>
+</html>

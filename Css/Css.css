@@ -1,0 +1,311 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Coda', cursive;
+	display: grid;
+	grid-template-areas: "header header header" "DivPropaganda DivPropaganda DivPropaganda" "section section aside" "footer footer footer";
+	grid-gap: 20px;
+}
+
+/*GRID do Site*/
+/*GRID do Site*/
+
+header{
+	grid-area: header;
+	border-bottom: 1px solid #e5e5e5;
+	height: 100px;
+	/*Cima/Direita/Baixo/Esquerda*/
+	margin: 10px 5% 0px 5%;
+}
+.DivPropaganda{
+	grid-area: DivPropaganda;
+	margin: 0px 5% 0px 5%;
+	height: 80px;
+	border: 1px solid #e5e5e5;
+}
+section{
+	grid-area: section;
+	/*Cima/Direita/Baixo/Esquerda*/
+	margin: 0px 3% 0px 3%;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	align-items: end;
+}
+aside{
+	width: 94%;
+	grid-area: aside;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	/*Cima/Direita/Baixo/Esquerda*/
+	margin: 0px 9% 0px 0px;
+}
+footer{
+	background: #2e2d2d;
+	height: auto;
+	grid-area: footer;
+	border-top: 1px solid #e5e5e5;
+}
+footer p{
+	text-align: center;
+	display: inline-block;
+	color: #808080;
+	margin: 2%;
+	font-size: 14px;
+	cursor: pointer;
+}
+footer p:hover{
+	color: #fff;
+}
+footer .UltimaLinha{
+	border-top: 1px solid #808080;
+	margin: 2%;
+}
+footer .UltimaLinha p{
+	display: inline-block;
+	color: #808080;
+	margin: 2%;
+	font-size: 15px;	
+}
+
+footer .UltimaLinha .FooterP1{text-align: left; float: left;}
+footer .UltimaLinha .FooterP2{text-align: right; float: right;}
+
+/*GRID do Site*/
+/*GRID do Site*/
+
+/*GRID e CSS do TopoSite*/
+/*GRID e CSS do TopoSite*/
+
+header .TopoSite{
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: auto;
+}
+header .Logo{
+	grid-column: 2;
+	justify-self: center; 
+	align-self: center;
+}
+header .Logo img{
+	width: 195px;
+	height: auto;
+	cursor: pointer;
+}
+
+
+/*GRID e CSS do TopoSite*/
+/*GRID e CSS do TopoSite*/
+
+/*Menu site*/
+/*Menu site*/
+.side-bar{
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(20px);
+	width: 320px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	overflow-y: auto;
+	transition: 0.5s ease;
+	transition-property: left;
+}
+.side-bar.active{
+	left: 0;
+}
+.side-bar .menu{
+	width: 100%;
+	margin-top: 80px;
+}
+.side-bar .menu .item{
+	position: relative;
+	cursor: pointer;
+}
+.side-bar .menu .item a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 30px;
+	line-height: 60px;
+}
+.side-bar .menu .item a:hover{
+	background: #5e5e5e;
+	transition: 0.3s ease;
+}
+.side-bar .menu .item a i{
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	transition: 0.3s ease;
+}
+.side-bar .menu .item .sub-menu{
+	background: rgba(255, 255, 255, 0.2);
+	display: none;
+}
+.side-bar .menu .item .sub-menu a{
+	padding-left: 75px;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+.close-btn{
+	position: absolute;
+	right: 0;
+	/*Cima/Direita/Baixo/Esquerda*/
+	margin: 0px 7% 0px 0%;
+	color: #fff;
+	font-size: 38px;
+	cursor: pointer;
+}
+.menu-btn{
+	color: #000;
+	font-size: 38px;
+	cursor: pointer;
+	grid-column: 1;
+	justify-self: center;
+	align-self: center;	
+}
+.seach-bnt{
+	color: #000;
+	font-size: 38px;
+	cursor: pointer;
+	grid-column: 3;
+	justify-self: center;
+	align-self: center;
+}
+/*Menu site*/
+/*Menu site*/
+
+/*GRID e CSS da Section*/
+/*GRID e CSS da Section*/
+
+.BoxNewPostSection{
+	padding: 1.5%;
+	border-bottom: 1px solid #e5e5e5;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	border-bottom: 1px solid #e5e5e5;
+	grid-gap: 5px;
+}
+.BoxNewPostSection img{
+	grid-column: 1;
+	grid-row: 1/4;
+	width: 230px;
+}
+
+/* Todos os paragrafos da section */
+.BoxNewPostSection p{
+	padding: 0px;
+	margin: 0px;
+	margin-left: 2%;
+}
+/* Grid Título Item section */
+.TitleBoxNewPostSection{
+	grid-column: 2/4;
+	grid-row: 1;
+	font-size: 35px;
+}	
+/* Grid Sinopse Item section */
+.RessBoxNewPostSection{
+	grid-column: 2/4;
+	grid-row: 2;
+	font-size: 18px;
+	color: #525151;
+}
+/* Grid Host Section */
+.HostBoxNewPostSection{
+	grid-column: 2;
+	grid-row: 3;
+}
+.DataBoxNewPostSection{
+	grid-column: 3;
+	grid-row: 3;
+}
+
+/*Size paragrafo, img icon host e data*/
+.DataBoxNewPostSection p{
+	float: right;
+	margin-left: 1px;
+}
+.DataBoxNewPostSection img{
+	float: right;
+	width: 22px;
+}
+.HostBoxNewPostSection p{
+	float: left;
+	margin-left: 1px;	
+}
+.HostBoxNewPostSection img{
+	float: left;
+	width: 22px;
+	margin-left: 3%;
+}
+
+/*GRID e CSS da Section*/
+/*GRID e CSS da Section*/
+
+/*GRID e CSS da Aside*/
+/*GRID e CSS da Aside*/
+
+.BoxNewPostAside{
+	display: grid;
+	grid-template-areas: "imgAside TituloAside" "imgAside ResumoAside";
+	justify-content: start;
+	padding: 1%;
+	grid-gap: 1%;
+	border-bottom: 1px solid #e5e5e5;
+}
+.BoxNewPostAside p{
+	padding: 0%;
+	margin: 0%;
+}
+.BoxNewPostAside img{
+	grid-area: imgAside;
+	width: 80px;
+}
+.TitleBoxNewPostAside{
+	grid-area: TituloAside;
+	align-self: start;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.RessBoxNewPostAside{
+	grid-area: ResumoAside;
+	align-self: center;
+	margin-top: -5%;
+}
+/*GRID e CSS da Aside*/
+/*GRID e CSS da Aside*/
+
+/*SITE Responsive*/
+/*SITE Responsive*/
+
+@media(max-width: 1012px){
+	body{
+		grid-template-areas: "header header header" "DivPropaganda DivPropaganda DivPropaganda" "aside aside aside" "section section section" "footer footer footer";
+	}
+	aside{
+		width: 94%;
+		grid-area: aside;
+		border-bottom: 1px solid #e5e5e5;
+		border-top: 1px solid #e5e5e5;
+		/*Cima/Direita/Baixo/Esquerda*/
+		margin: 0px 3% 0px 3%;
+	}
+	.BoxNewPostAside{
+		grid-template-columns: auto;
+		grid-gap: 1.5%;
+		justify-content: start;
+	}
+	.RessBoxNewPostAside{
+		margin-top: -3.5%;
+	}
+}
+@media(max-width: 550px){
+
+}
+
+/*SITE Responsive*/
+/*SITE Responsive*/
